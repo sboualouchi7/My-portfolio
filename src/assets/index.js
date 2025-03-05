@@ -24,11 +24,12 @@ import threejs from "./tech/threejs.svg";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
+import algo from "./company/algo.png";
+import ibo from "./company/ibo.png";
+import blog from "./blog.png";
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import scren from "./scren.png";
+
 
 export {
   logo,
@@ -54,9 +55,10 @@ export {
   threejs,
   meta,
   shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  algo,
+  ibo,
+   carrent,
+   blog,
+  scren,
+
 };

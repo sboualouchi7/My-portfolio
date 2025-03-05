@@ -16,12 +16,12 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
-  tesla,
+  algo,
+  ibo,
   shopify,
   carrent,
-  jobit,
-  tripguide,
+  scren,
+  blog,
   threejs,
 } from "../assets";
 
@@ -116,58 +116,25 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Java Full-stack Developer",
+    company_name: "ALGO Consulting Group",
+    icon: algo,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "April 2023 - July 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "During my internship at Algo Consulting Group, I developed a desktop application for manual train ticket management during system outages. Using Java 8, JavaFX, and Hibernate, I implemented features for transaction management and data handling. This experience strengthened my skills in desktop application development, database integration, and problem-solving in real-world scenarios.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Java Full-stack Developer",
+    company_name: "Ibo-Service",
+    icon: ibo,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "April 2024 - July 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "During a 3-month project with IBO Service, I developed a web platform for real estate service management, enabling property reservations, user management, and secure authentication. Using Java 22, Spring Boot, Thymeleaf, and Spring Security, I implemented robust back-end functionalities and integrated MySQL for efficient data handling. The front-end was designed with Bootstrap 5 to ensure a responsive and user-friendly interface. This project strengthened my expertise in full-stack development, RESTful APIs, and secure application design, delivering a practical solution for real estate operations.",
     ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
+  },];
 
 const testimonials = [
   {
@@ -203,61 +170,61 @@ const projects = [
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "react",
+        name: "PHP/Laravel",
+        color: "green-text-gradient ",
+      },
+      {
+        name: "Bootstrap",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "Mongodb",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/Adamelbouchiri",
+    source_code_link: "https://github.com/sboualouchi7",
   },
   {
-    name: "Job IT",
+    name: "Medical Cabinet Management System",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web-based platform for managing patient records and appointments in medical cabinets. Enables CRUD operations for patients and rendezvous. Provides a streamlined solution for healthcare professionals to organize and track patient interactions efficiently.",
     tags: [
       {
-        name: "react",
+        name: "Java/JEE",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Spring boot",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Angular",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: scren,
     source_code_link: "https://github.com/Adamelbouchiri",
   },
   {
-    name: "Trip Guide",
+    name: "Blog Platform",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A React.js and Express.js web app for posting and reading informatique blogs. Enables seamless blog creation and viewing, showcasing my full-stack development skills",
     tags: [
       {
-        name: "nextjs",
+        name: "Reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "ExpressJs",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Mysql",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: blog,
     source_code_link: "https://github.com/Adamelbouchiri",
   },
 ];
