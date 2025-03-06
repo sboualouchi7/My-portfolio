@@ -204,7 +204,7 @@ const projects = [
       },
     ],
     image: scren,
-    source_code_link: "https://github.com/Adamelbouchiri",
+    source_code_link: "https://github.com/sboualouchi7",
   },
   {
     name: "Blog Platform",
@@ -225,7 +225,7 @@ const projects = [
       },
     ],
     image: blog,
-    source_code_link: "https://github.com/Adamelbouchiri",
+    source_code_link: "https://github.com/sboualouchi7",
   },
 ];
 
