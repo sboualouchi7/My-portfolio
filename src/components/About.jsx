@@ -42,13 +42,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary leading-[30px] max-w-3xl text-[17px]"
       >
-        Hello i’m Adam a Passionate Full stack developer with a strong
-        foundation in C++, having solved 300+ algorithms and mastered concepts
-        like OOP and data structures. Proficient in SQL, front-end technologies
-        (HTML, CSS, JavaScript, Bootstrap, Tailwind, Vue.js, React.js) also Git
-        plus Github, and experienced in building dynamic web projects. Skilled
-        in Laravel + php for back-end development, including CRUD, database
-        relationships, and role management.
+       Hello, I’m Salman, a passionate Full-Stack Developer skilled in Java/Spring Boot, Angular, and Python. With expertise in OOP, data structures, and microservices, I build dynamic web applications and robust back-end systems. Proficient in front-end technologies (HTML, CSS, JavaScript, Bootstrap) and tools like Git/GitHub, I also have experience in Machine Learning and data analysis. Currently seeking a final-year internship (PFE) starting February 2025, I’m ready to contribute to innovative projects with my technical skills and problem-solving mindset.
       </motion.p>
 
       <div className="mt-10 flex flex-wrap gap-10">

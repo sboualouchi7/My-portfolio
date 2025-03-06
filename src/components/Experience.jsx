@@ -12,7 +12,7 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
-const ExperienceCard = ({ experience }) => {
+const   ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{ background: "#1d1836", color: "#fff" }}
@@ -24,7 +24,7 @@ const ExperienceCard = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className="w-[60%] h-[60%] object-contain"
+            className="w-12 h-12 object-contain rounded-full"
           />
         </div>
       }
@@ -57,7 +57,7 @@ const Experience = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>what I Have Done So Far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        <h2 className={styles.sectionHeadText}>Professional experience .</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">
