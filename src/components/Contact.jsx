@@ -1,12 +1,11 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import Swal from 'sweetalert2'; // Import SweetAlert2
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-
 import { EarthCanvas } from "./canvas";
-
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
@@ -22,7 +21,6 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setForm({ ...form, [name]: value });
   };
 
@@ -32,29 +30,52 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_9lw5wg6",
-        "template_dh4eo2j",
+        "service_74j9c3o", // Service ID
+        "template_617jiy3", // Template ID
         {
           from_name: form.name,
-          to_name: "Adam El Bouchiri",
+          to_name: "Salman BOUALOUCHI",
           from_email: form.email,
-          to_email: "elbouchiriadam@gmail.com",
+          to_email: "sboualouchi6@gmail.com", // Ton adresse e-mail
           message: form.message,
         },
-        "JZSe02OI3p-7Zp_a5"
+        "Ah8I-udDEvVyVsPGH" // User ID
       )
-      .then(() => {
-        setLoading(false);
-        alert("Thank you :), i will get back to you as soon as possible.");
-        setForm({
-          name: "",
-          email: "",
-          message: "",
-        });
-      }, (error) => {
-        setLoading(false);
-        alert("Somthing went wrong!")
-      });
+      .then(
+        () => {
+          setLoading(false);
+
+          // Alerte de succès stylée
+          Swal.fire({
+            title: 'Merci !',
+            text: 'Je vous répondrai dès que possible.',
+            icon: 'success', // Icône de succès
+            confirmButtonText: 'OK',
+            confirmButtonColor: '#61dafb', // Couleur du bouton
+          });
+
+          // Réinitialiser le formulaire
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+
+          // Alerte d'erreur stylée
+          Swal.fire({
+            title: 'Erreur',
+            text: 'Quelque chose s\'est mal passé !',
+            icon: 'error', // Icône d'erreur
+            confirmButtonText: 'OK',
+            confirmButtonColor: '#ff4444', // Couleur du bouton
+          });
+
+          console.error("Erreur EmailJS :", error);
+        }
+      );
   };
 
   return (
@@ -102,7 +123,7 @@ const Contact = () => {
           </label>
 
           <label htmlFor="message" className="flex flex-col ">
-            <span className="text-white font-medium mb-4">Your Name</span>
+            <span className="text-white font-medium mb-4">Your message</span>
             <textarea
               id="message"
               rows={7}
